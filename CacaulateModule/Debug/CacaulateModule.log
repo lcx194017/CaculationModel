@@ -1,0 +1,10 @@
+﻿source.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_execute，该符号在函数 "public: static void __cdecl Caculation::FFT(int,double (*)[2],double (*)[2])" (?FFT@Caculation@@SAXHPAY01N0@Z) 中被引用
+source.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_plan_dft_1d，该符号在函数 "public: static void __cdecl Caculation::FFT(int,double (*)[2],double (*)[2])" (?FFT@Caculation@@SAXHPAY01N0@Z) 中被引用
+source.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_destroy_plan，该符号在函数 "public: static void __cdecl Caculation::FFT(int,double (*)[2],double (*)[2])" (?FFT@Caculation@@SAXHPAY01N0@Z) 中被引用
+source.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_cleanup，该符号在函数 "public: static void __cdecl Caculation::FFT(int,double (*)[2],double (*)[2])" (?FFT@Caculation@@SAXHPAY01N0@Z) 中被引用
+source.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_malloc，该符号在函数 _main 中被引用
+source.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_free，该符号在函数 _main 中被引用
+E:\Projects\VsProjects\CacaulateModule\CacaulateModule\fftw-3.3.5-dll64\libfftw3f-3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\Projects\VsProjects\CacaulateModule\CacaulateModule\fftw-3.3.5-dll64\libfftw3l-3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\Projects\VsProjects\CacaulateModule\CacaulateModule\fftw-3.3.5-dll64\libfftw3-3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\Projects\VsProjects\CacaulateModule\Debug\CacaulateModule.exe : fatal error LNK1120: 6 个无法解析的外部命令
