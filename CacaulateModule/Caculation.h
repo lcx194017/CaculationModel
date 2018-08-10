@@ -28,6 +28,12 @@ public:
 	template<typename T, int N>                  //计算峰峰值 
 	static T caculatePKtoPk(T(&data)[N]);
 
+	template<typename T, int N>                  //计算0-pk
+	static T caculateZerotoPk(T(&data)[N]);
+
+	template<typename T, int N>                  //计算0-pk
+	static T caculateCrestFactor(T(&data)[N]);
+
 
 	//快速傅里叶变换函数
 	static void FFT(int n, fftw_complex* in, fftw_complex* out);

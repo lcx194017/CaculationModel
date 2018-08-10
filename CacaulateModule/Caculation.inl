@@ -63,7 +63,7 @@ T Caculation::caculateRMS(T(&data)[N])
 }
 
 /************************************************************************/
-/* 计算数组数据峰峰值                                                   */
+/* 计算数组数据峰峰值                                                     */
 /************************************************************************/
 template<typename T, int N>
 T Caculation::caculatePKtoPk(T(&data)[N])
@@ -77,6 +77,28 @@ T Caculation::caculatePKtoPk(T(&data)[N])
 		if (data[i] > max) max = data[i];
 	}
 	return max - min;
+}
+
+/************************************************************************/
+/* 计算数组数据0-pk                                                      */
+/************************************************************************/
+template<typename T, int N>
+T Caculation::caculateZerotoPk(T(&data)[N])
+{
+	return caculatePKtoPk(data)/2;
+}
+
+/************************************************************************/
+/* 计算数组数据Crest factor                                              */
+/************************************************************************/
+template<typename T, int N>
+T Caculation::caculateCrestFactor(T(&data)[N])
+{
+	T RMS = caculateRMS(data);
+	if (RMS != 0)
+		return caculatePKtoPk(data) / RMS;
+	else
+		return (T)HUGE_VAL;
 }
 
 /************************************************************************/
